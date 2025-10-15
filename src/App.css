@@ -1,0 +1,83 @@
+/* Reset cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* Container tổng */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Thanh điều hướng */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #44b1ff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* Input, button, select, textarea */
+input,
+button,
+select,
+textarea {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #44b1ff;
+  box-shadow: 0 0 0 2px rgba(68, 177, 255, 0.2);
+}
+
+/* Nút */
+button {
+  cursor: pointer;
+  background: #1d9af3;
+  color: #fff;
+  border: none;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #138dd8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
